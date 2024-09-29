@@ -39,4 +39,8 @@ run following command to get your contribution in current repo for the last mont
 git log --all --author="Mikhail" --since="1 month ago" --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }'
 ```
 
+outputs like 
+```bash
+added lines: 111, removed lines: 4, total lines: 107
+```
 ---
